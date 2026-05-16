@@ -29,6 +29,12 @@
       .paper-row:last-child td {
         border-bottom: none;
       }
+
+      .section-title::before {
+        content: "•";
+        font-weight: bold;
+        margin-right: 8px;
+      }
     </style>
     
   </head>
@@ -66,7 +72,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
+                <h2 class="section-title">Research</h2>
                 <p>
                   My research focuses on human-preference-aware autonomous driving. I study trajectory planning methods that incorporate human preferences toward normal-to-urgent driving scenarios.
                 </p>
@@ -78,154 +84,272 @@
     
 
   
+    <!-- Submitted paper list -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr>
+          <td style="padding:16px;width:100%;vertical-align:middle">
+            <h2 class="section-title">Submitted paper list</h2>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-    <tr class="paper-row">
-    </tr>
-
-    <tr class="paper-row">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <img src='images/Lim2026personalized.jpg' width="160">
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2602.08326">
-			<span class="papertitle">Personalized Autonomous Driving via Optimal Control with Clearance Constraints from Questionnaires</span>
-        </a>
-        <br>
-				<strong>Yonjae Lim*</strong>,
-        Dabin Kim, and H. Jin Kim
-				<br>
-        <em>ICRA</em>, 2026
-        <br>
-        <a href="https://arxiv.org/abs/2602.08326">paper</a>
-        /
-        <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
-        /
-        <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">project page</a>
-        <p></p>
-        <p>
-        Driving without considering the preferred separation distance from surrounding vehicles may cause discomfort for users.
-        To address this limitation, this paper proposes a human-preference-aware driving planner that incorporates users’ desired clearance from surrounding vehicles as constraints in an optimal control problem. 
-        Simulations with different user responses show that the planner better aligns with individual preferences than preference-agnostic baselines.
-				</p>
-      </td>
-    </tr>
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <!-- submitted paper rows here -->
 
 
-
-
-    
-    <tr class="paper-row">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <img src='images/Lim2026safe.jpg' width="160">
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/document/11359671">
-			<span class="papertitle">Safe Multimodal Replanning via Projection-based Trajectory Clustering in Crowded Environments</span>
-        </a>
-        <br>
-				<strong>Yonjae Lim*</strong>,
-        Seungwoo Jung, Dabin Kim, Dongjae Lee, and H. Jin Kim
-				<br>
-        <em>RA-L</em>, 2025
-        <br>
-        <a href="https://ieeexplore.ieee.org/document/11359671">paper</a>
-        /
-        <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">video</a>
-        /
-        <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">project page</a>
-        <p></p>
-        <p>
-        Crowded and dynamic environments require fast replanning; however, single-trajectory optimization lacks alternative paths, while parallel optimization often relies on predefined initial guidance. 
-        In this work, we identify multimodal optimal trajectory distributions without initial guidance by projecting sampled trajectories onto safe constraint sets, clustering them, and optimizing each cluster using MPPI.
-        Simulation and hardware experiments demonstrate higher success rates and safe drone navigation in crowded 3D environments.
-      </p>
-      </td>
-    </tr>
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/Lim2026MILC.jpg' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2602.08326">
+          <span class="papertitle">MILC: Mitigating Inevitable Collisions via Collision-Location-aware Contact Planning</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Seokjin Kim, Jinwoo Lee, and H. Jin Kim
+            <br>
+            <em>-</em>, 2026
+            <br>
+            <!-- <a href="https://arxiv.org/abs/2602.08326">paper</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">project page</a> -->
+            <p></p>
+            <p>
+              Comming soon!
+            </p>
+          </td>
+        </tr>
 
 
 
 
-
-
-    
-    <tr class="paper-row">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <img src='images/Lim2026efficient.png' width="160">
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">
-			<span class="papertitle">Efficient Learning-Based Path Planning on Receding Horizon with Conditional Flow Matching</span>
-        </a>
-        <br>
-				<strong>Yonjae Lim*</strong>,
-        Yongjae Lim, Yeonsoo Park, Jeongtae Huh, Youngsoo Han, and H Jin Kim
-				<br>
-        <em>IJCAS</em>, 2026
-        <br>
-        <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">paper</a>
-        <p></p>
-        <p>
-        Denoising-based planning can generate safe and optimized trajectories but often requires slow iterative refinement. 
-        This paper proposes a normalizing-flow-based path-planning method that refines trajectories step by step along the planning horizon, enabling adaptive trajectory-length adjustment under computational time constraints. 
-        The generated trajectory can also initialize MPPI optimization, reducing required iterations and improving efficiency. 
-        The method is validated through simulation comparisons with diffusion-like planners and hardware experiments.
-				</p>
-      </td>
-    </tr>
-
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/Lim2026CoPILOT.jpg' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2602.08326">
+          <span class="papertitle">CoPILOT: Coverage-Guaranteed Partitioning of Control-Input Space for Local-Minima-Avoidance Trajectory Optimization without Initial Guidance</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Seungwoo Jung, Sangjin Han, and H. Jin Kim
+            <br>
+            <em>-</em>, 2026
+            <br>
+            <!-- <a href="https://arxiv.org/abs/2602.08326">paper</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">project page</a> -->
+            <p></p>
+            <p>
+              Comming soon!
+            </p>
+          </td>
+        </tr>
 
 
 
 
-    <tr class="paper-row">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <img src='images/MARL_survey.png' width="160">
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">
-			<span class="papertitle">A Survey on Collision Avoidance Algorithms for Multi-robot Systems</span>
-        </a>
-        <br>
-        Dahyun Oh*, <strong>Yonjae Lim</strong>, Hoseong Jung, Jeongtae Huh, Jusuk Lee, Changhyun Choi, H. Jin Kim, and Jungwon Park
-				<br>
-        <em>IJCAS</em>, 2025
-        <br>
-        <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">paper</a>
-        <p></p>
-        <p>
-        Multi-robot systems improve efficiency through cooperation, but collision avoidance with static and dynamic obstacles remains a major challenge. 
-        This survey reviews recent collision avoidance methods, including classical centralized and decentralized approaches as well as learning-based methods. 
-        </p>
-      </td>
-    </tr>
-            
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/Lim2026PALCON.jpg' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2602.08326">
+          <span class="papertitle">PALCON: Preference-aligned Planning with Long- and Short-term Preference Integration for Personalized Driving</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Seungwon Roh, Dabin Kim, Youngmin Yoon, and H. Jin Kim
+            <br>
+            <em>-</em>, 2026
+            <br>
+            <!-- <a href="https://arxiv.org/abs/2602.08326">paper</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">project page</a> -->
+            <p></p>
+            <p>
+              Comming soon!
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 
-    
-    <tr class="paper-row">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <img src='images/LRFS.jpg' width="160">
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/document/11269689?">
-			<span class="papertitle">Reachable-Set-based Trajectory Sampling for Local Planning of Autonomous Vehicles</span>
-        </a>
-        <br>
-				<strong>Yonjae Lim*</strong>,
-        Youngmin Yoon, Jeonghyun Byun, Sangyoon Kim, and H. Jin Kim
-				<br>
-        <em>Access</em>, 2025
-        <br>
-        <a href="https://ieeexplore.ieee.org/document/11269689">paper</a>
-        <p></p>
-        <p>
-				To improve sampling efficiency in sampling based trajectory optimization, we focus on increasing the ratio of feasible trajectory samples among all sampled trajectories. 
-        To this end, we propose LRFS MPPI, which combines the Lateral Recursive Feasible Set (LRFS), a recursively computed feasible steering input set that guarantees the vehicle remains within road boundaries over the prediction horizon, with truncated normal sampling. 
-        We demonstrate through simulation and real world experiments that the proposed method generates high quality collision free trajectories more efficiently and reliably.
-        </p>
-      </td>
-    </tr>
-            
+
+
+
+    <!-- Accepted paper list -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <tr>
+          <td style="padding:16px;width:100%;vertical-align:middle">
+            <h2 class="section-title">Accepted paper list</h2>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody>
+        <!-- accepted paper rows here -->
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/Lim2026personalized.jpg' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2602.08326">
+          <span class="papertitle">Personalized Autonomous Driving via Optimal Control with Clearance Constraints from Questionnaires</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Dabin Kim, and H. Jin Kim
+            <br>
+            <em>ICRA</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2602.08326">paper</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
+            /
+            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">project page</a>
+            <p></p>
+            <p>
+            Driving without considering the preferred separation distance from surrounding vehicles may cause discomfort for users.
+            To address this limitation, this paper proposes a human-preference-aware driving planner that incorporates users’ desired clearance from surrounding vehicles as constraints in an optimal control problem. 
+            Simulations with different user responses show that the planner better aligns with individual preferences than preference-agnostic baselines.
+            </p>
+          </td>
+        </tr>
+
+
+
+
+        
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/Lim2026safe.jpg' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/11359671">
+          <span class="papertitle">Safe Multimodal Replanning via Projection-based Trajectory Clustering in Crowded Environments</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Seungwoo Jung, Dabin Kim, Dongjae Lee, and H. Jin Kim
+            <br>
+            <em>RA-L</em>, 2025
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/11359671">paper</a>
+            /
+            <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">video</a>
+            /
+            <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">project page</a>
+            <p></p>
+            <p>
+            Crowded and dynamic environments require fast replanning; however, single-trajectory optimization lacks alternative paths, while parallel optimization often relies on predefined initial guidance. 
+            In this work, we identify multimodal optimal trajectory distributions without initial guidance by projecting sampled trajectories onto safe constraint sets, clustering them, and optimizing each cluster using MPPI.
+            Simulation and hardware experiments demonstrate higher success rates and safe drone navigation in crowded 3D environments.
+          </p>
+          </td>
+        </tr>
+
+
+
+
+
+
+        
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/Lim2026efficient.png' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">
+          <span class="papertitle">Efficient Learning-Based Path Planning on Receding Horizon with Conditional Flow Matching</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Yongjae Lim, Yeonsoo Park, Jeongtae Huh, Youngsoo Han, and H Jin Kim
+            <br>
+            <em>IJCAS</em>, 2026
+            <br>
+            <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">paper</a>
+            <p></p>
+            <p>
+            Denoising-based planning can generate safe and optimized trajectories but often requires slow iterative refinement. 
+            This paper proposes a normalizing-flow-based path-planning method that refines trajectories step by step along the planning horizon, enabling adaptive trajectory-length adjustment under computational time constraints. 
+            The generated trajectory can also initialize MPPI optimization, reducing required iterations and improving efficiency. 
+            The method is validated through simulation comparisons with diffusion-like planners and hardware experiments.
+            </p>
+          </td>
+        </tr>
+
+
+
+
+
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/MARL_survey.png' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">
+          <span class="papertitle">A Survey on Collision Avoidance Algorithms for Multi-robot Systems</span>
+            </a>
+            <br>
+            Dahyun Oh*, <strong>Yonjae Lim</strong>, Hoseong Jung, Jeongtae Huh, Jusuk Lee, Changhyun Choi, H. Jin Kim, and Jungwon Park
+            <br>
+            <em>IJCAS</em>, 2025
+            <br>
+            <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">paper</a>
+            <p></p>
+            <p>
+            Multi-robot systems improve efficiency through cooperation, but collision avoidance with static and dynamic obstacles remains a major challenge. 
+            This survey reviews recent collision avoidance methods, including classical centralized and decentralized approaches as well as learning-based methods. 
+            </p>
+          </td>
+        </tr>
+                
+
+
+        
+        <tr class="paper-row">
+          <td style="padding:16px;width:20%;vertical-align:middle">
+            <img src='images/LRFS.jpg' width="160">
+          </td>
+          <td style="padding:8px;width:80%;vertical-align:middle">
+            <a href="https://ieeexplore.ieee.org/document/11269689?">
+          <span class="papertitle">Reachable-Set-based Trajectory Sampling for Local Planning of Autonomous Vehicles</span>
+            </a>
+            <br>
+            <strong>Yonjae Lim*</strong>,
+            Youngmin Yoon, Jeonghyun Byun, Sangyoon Kim, and H. Jin Kim
+            <br>
+            <em>Access</em>, 2025
+            <br>
+            <a href="https://ieeexplore.ieee.org/document/11269689">paper</a>
+            <p></p>
+            <p>
+            To improve sampling efficiency in sampling based trajectory optimization, we focus on increasing the ratio of feasible trajectory samples among all sampled trajectories. 
+            To this end, we propose LRFS MPPI, which combines the Lateral Recursive Feasible Set (LRFS), a recursively computed feasible steering input set that guarantees the vehicle remains within road boundaries over the prediction horizon, with truncated normal sampling. 
+            We demonstrate through simulation and real world experiments that the proposed method generates high quality collision free trajectories more efficiently and reliably.
+            </p>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+                
 
 
 
