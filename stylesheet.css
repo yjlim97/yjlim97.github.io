@@ -140,3 +140,12 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.paper-row td {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.paper-row:last-child td {
+  border-bottom: none;
+}
