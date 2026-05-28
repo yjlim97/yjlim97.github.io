@@ -1,359 +1,700 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Yongjae Lim" />
+  <title>Yongjae Lim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <title>Yonjae Lim</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1YQDL9FWH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J1YQDL9FWH');
+  </script>
 
-    <meta name="author" content="Yonjae Lim">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --ink: #18202a;
+      --muted: #5f6b7a;
+      --line: #e7ecf2;
+      --soft: #eef5ff;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+      --radius: 24px;
+      --max-width: 980px;
+    }
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1YQDL9FWH"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    * { box-sizing: border-box; }
 
-      gtag('config', 'G-J1YQDL9FWH');
-    </script>
+    html { scroll-behavior: smooth; }
 
-    <style>
-      .paper-row td {
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 20px;
-      }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.10), transparent 28rem),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 42%, #ffffff 100%);
+      line-height: 1.65;
+    }
 
-      .paper-row:last-child td {
-        border-bottom: none;
-      }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+    }
 
-      .section-title::before {
-        content: "•";
-        font-weight: bold;
-        margin-right: 8px;
-      }
-    </style>
-    
-  </head>
+    a:hover { color: var(--accent-dark); }
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Yonjae Lim
-                </p>
-                <p>
-		<!-- I'm a research scientist at <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco, where I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.
-		At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>, and <a href="https://research.google/blog/bringing-3d-shoppable-products-online-with-generative-ai/">Shopping</a>.
-		I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>.
-		I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. -->
-    I am a Ph.D. candidate at Seoul National University, advised by <a href="https://larr.snu.ac.kr/">Prof. H. Jin Kim</a>.
-    My research interests include autonomous driving, personalized driving, and trajectory planning.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:yongjae.lim@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=S1p-KXMAAAAJ&hl=ko&oi=ao">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/yjlim97/">Github</a>
-                  <!-- <a href="https://linkedin.com/in/yjlim97">LinkedIn</a> -->
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/yjlim97.png"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/yjlim97.png" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2 class="section-title">Research</h2>
-                <p>
-                  My research focuses on human-preference-aware autonomous driving. I study trajectory planning methods that incorporate human preferences toward normal-to-urgent driving scenarios.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    .page {
+      width: min(var(--max-width), calc(100% - 36px));
+      margin: 0 auto;
+      padding: 36px 0 56px;
+    }
 
-    
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
 
-  
-    <!-- Submitted paper list -->
-    <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr>
-          <td style="padding:16px;width:100%;vertical-align:middle">
-            <h2 class="section-title">Submitted paper list</h2>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    .brand {
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      font-size: 22px;
+      color: var(--ink);
+    }
 
-    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
+    .nav-links a,
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #334155;
+      background: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      font-weight: 600;
+    }
 
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/Lim2026MILC.jpg' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2602.08326">
-          <span class="papertitle">MILC: Mitigating Inevitable Collisions via Collision-Location-aware Contact Planning</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Seokjin Kim, Jinwoo Lee, and H. Jin Kim
-            <br>
-            <em>-</em>, 2026
-            <br>
-            <p></p>
-            <p>
-              Coming soon!
-            </p>
-          </td>
-        </tr>
+    .nav-links a:hover,
+    .pill-link:hover {
+      background: var(--soft);
+      border-color: rgba(37, 99, 235, 0.20);
+      color: var(--accent-dark);
+      transform: translateY(-1px);
+    }
 
+    .pill-link svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 7px;
+      flex: 0 0 auto;
+      fill: currentColor;
+    }
 
+    .pill-link .icon-stroke {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
 
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 34px;
+      align-items: center;
+      padding: 34px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      border-radius: calc(var(--radius) + 6px);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
 
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/Lim2026CoPILOT.jpg' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2602.08326">
-          <span class="papertitle">CoPILOT: Coverage-Guaranteed Partitioning of Control-Input Space for Local-Minima-Avoidance Trajectory Optimization without Initial Guidance</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Seungwoo Jung, Sangjin Han, and H. Jin Kim
-            <br>
-            <em>-</em>, 2026
-            <br>
-            <p></p>
-            <p>
-              Coming soon!
-            </p>
-          </td>
-        </tr>
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      color: var(--accent-dark);
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
 
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.12);
+    }
 
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+    }
 
+    .tagline {
+      margin: 18px 0 18px;
+      font-size: clamp(19px, 3vw, 28px);
+      line-height: 1.25;
+      letter-spacing: -0.035em;
+      font-weight: 800;
+      color: #202a36;
+    }
 
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/Lim2026PALCON.jpg' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2602.08326">
-          <span class="papertitle">PALCON: Preference-aligned Planning with Long- and Short-term Preference Integration for Personalized Driving</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Seungwon Roh, Dabin Kim, Youngmin Yoon, and H. Jin Kim
-            <br>
-            <em>-</em>, 2026
-            <br>
-            <p></p>
-            <p>
-              Coming soon!
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table> -->
+    .bio {
+      margin: 0;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 16px;
+    }
 
+    .link-row {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
 
+    .profile-wrap {
+      justify-self: center;
+      width: min(260px, 100%);
+      aspect-ratio: 1 / 1;
+      padding: 8px;
+      border-radius: 32px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.20), rgba(148, 163, 184, 0.08));
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    }
 
+    .profile-wrap img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 26px;
+      filter: saturate(1.03) contrast(1.02);
+    }
 
+    section { margin-top: 34px; }
 
-    <!-- Accepted paper list -->
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr>
-          <td style="padding:16px;width:100%;vertical-align:middle">
-            <h2 class="section-title">Accepted paper list</h2>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 14px;
+      padding: 0 4px;
+    }
 
-    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <!-- accepted paper rows here -->
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/Lim2026personalized.jpg' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://yjlim97.github.io/ICRA_2026/">
-          <span class="papertitle">Personalized Autonomous Driving via Optimal Control with Clearance Constraints from Questionnaires</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Dabin Kim, and H. Jin Kim
-            <br>
-            <em>ICRA</em>, 2026
-            <br>
-            <a href="https://arxiv.org/abs/2602.08326">paper</a>
-            /
-            <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
-            /
-            <a href="https://yjlim97.github.io/ICRA_2026/">project page</a>
-            <p></p>
-            <p>
-            Driving without considering the preferred separation distance from surrounding vehicles may cause discomfort for users.
-            To address this limitation, this paper proposes a human-preference-aware driving planner that incorporates users’ desired clearance from surrounding vehicles as constraints in an optimal control problem. 
-            Simulations with different user responses show that the planner better aligns with individual preferences than preference-agnostic baselines.
-            </p>
-          </td>
-        </tr>
+    h2 {
+      margin: 0;
+      font-size: 25px;
+      letter-spacing: -0.045em;
+    }
 
+    .section-note {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
 
+    .card {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.045);
+    }
 
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
 
-        
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/Lim2026safe.jpg' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <a href="https://yjlim97.github.io/RAL_2026/">
-          <span class="papertitle">Safe Multimodal Replanning via Projection-based Trajectory Clustering in Crowded Environments</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Seungwoo Jung, Dabin Kim, Dongjae Lee, and H. Jin Kim
-            <br>
-            <em>RA-L</em>, 2026
-            <br>
-            <a href="https://ieeexplore.ieee.org/document/11359671">paper</a>
-            /
-            <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">video</a>
-            /
-            <a href="https://yjlim97.github.io/RAL_2026/">project page</a>
-            <p></p>
-            <p>
-            Crowded and dynamic environments require fast replanning; however, single-trajectory optimization lacks alternative paths, while parallel optimization often relies on predefined initial guidance. 
-            In this work, we identify multimodal optimal trajectory distributions without initial guidance by projecting sampled trajectories onto safe constraint sets, clustering them, and optimizing each cluster using MPPI.
-            Simulation and hardware experiments demonstrate higher success rates and safe drone navigation in crowded 3D environments.
-          </p>
-          </td>
-        </tr>
+    .topic {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fbfdff;
+    }
 
+    .topic strong {
+      display: block;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
 
+    .topic span {
+      color: var(--muted);
+      font-size: 14px;
+    }
 
+    .news-list {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: var(--muted);
+    }
 
+    .news-list li { margin: 7px 0; }
+    .news-list strong { color: var(--ink); }
 
+    .paper {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 22px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
 
-        
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/Lim2026efficient.png' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <!-- <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1"> -->
-          <span class="papertitle">Efficient Learning-Based Path Planning on Receding Horizon with Conditional Flow Matching</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Yongjae Lim, Yeonsoo Park, Jeongtae Huh, Youngsoo Han, and H Jin Kim
-            <br>
-            <em>IJCAS</em>, 2026
-            <br>
-            <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">paper</a>
-            <p></p>
-            <p>
-            Denoising-based planning can generate safe and optimized trajectories but often requires slow iterative refinement. 
-            This paper proposes a normalizing-flow-based path-planning method that refines trajectories step by step along the planning horizon, enabling adaptive trajectory-length adjustment under computational time constraints. 
-            The generated trajectory can also initialize MPPI optimization, reducing required iterations and improving efficiency. 
-            The method is validated through simulation comparisons with diffusion-like planners and hardware experiments.
-            </p>
-          </td>
-        </tr>
+    .paper:first-child { padding-top: 0; }
+    .paper:last-child { border-bottom: 0; padding-bottom: 0; }
 
+    .paper-media {
+      width: 100%;
+      aspect-ratio: 1.35 / 1;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #eef2f7;
+      border: 1px solid var(--line);
+    }
 
+    .paper-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
+    .venue {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 9px;
+      margin-bottom: 8px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--accent-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
 
-
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/MARL_survey.png' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <!-- <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9"> -->
-          <span class="papertitle">A Survey on Collision Avoidance Algorithms for Multi-robot Systems</span>
-            </a>
-            <br>
-            Dahyun Oh*, <strong>Yonjae Lim</strong>, Hoseong Jung, Jeongtae Huh, Jusuk Lee, Changhyun Choi, H. Jin Kim, and Jungwon Park
-            <br>
-            <em>IJCAS</em>, 2025
-            <br>
-            <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">paper</a>
-            <p></p>
-            <p>
-            Multi-robot systems improve efficiency through cooperation, but collision avoidance with static and dynamic obstacles remains a major challenge. 
-            This survey reviews recent collision avoidance methods, including classical centralized and decentralized approaches as well as learning-based methods. 
-            </p>
-          </td>
-        </tr>
-                
-
-
-        
-        <tr class="paper-row">
-          <td style="padding:16px;width:20%;vertical-align:middle">
-            <img src='images/LRFS.jpg' width="160">
-          </td>
-          <td style="padding:8px;width:80%;vertical-align:middle">
-            <!-- <a href="https://ieeexplore.ieee.org/document/11269689?"> -->
-          <span class="papertitle">Reachable-Set-based Trajectory Sampling for Local Planning of Autonomous Vehicles</span>
-            </a>
-            <br>
-            <strong>Yonjae Lim*</strong>,
-            Youngmin Yoon, Jeonghyun Byun, Sangyoon Kim, and H. Jin Kim
-            <br>
-            <em>Access</em>, 2025
-            <br>
-            <a href="https://ieeexplore.ieee.org/document/11269689">paper</a>
-            <p></p>
-            <p>
-            To improve sampling efficiency in sampling based trajectory optimization, we focus on increasing the ratio of feasible trajectory samples among all sampled trajectories. 
-            To this end, we propose LRFS MPPI, which combines the Lateral Recursive Feasible Set (LRFS), a recursively computed feasible steering input set that guarantees the vehicle remains within road boundaries over the prediction horizon, with truncated normal sampling. 
-            We demonstrate through simulation and real world experiments that the proposed method generates high quality collision free trajectories more efficiently and reliably.
-            </p>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-                
+    .papertitle {
+      display: block;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.28;
+      letter-spacing: -0.028em;
+      margin-bottom: 7px;
+    }
 
 
+    .paper a .papertitle {
+      color: var(--accent);
+    }
 
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:10px;">
-                  This page was built with
-                  <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:10px;">
-                    Dr. Jon Barron's
-                  </a>
-                  template.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+    .paper a:hover .papertitle {
+      color: var(--accent-dark);
+    }
+
+    .authors,
+    .description,
+    .meta {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .description { margin-top: 10px; }
+
+    .paper-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .paper-links a {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .paper-links a:hover { background: var(--soft); color: var(--accent-dark); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .entry {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .entry strong {
+      display: block;
+      color: var(--ink);
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+
+
+    .education-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .education-item {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: #fbfdff;
+    }
+
+    .school-logo {
+      width: 76px;
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .school-logo img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .education-degree {
+      margin: 0 0 3px;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 17px;
+      letter-spacing: -0.025em;
+    }
+
+    .education-meta,
+    .education-advisor {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .achievement-list {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: var(--muted);
+    }
+
+    .achievement-list li { margin: 7px 0; }
+    .achievement-list strong { color: var(--ink); }
+
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      text-align: right;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, var(--max-width)); padding-top: 22px; }
+      .nav { align-items: flex-start; flex-direction: column; }
+      .nav-links { justify-content: flex-start; }
+      .hero { grid-template-columns: 1fr; padding: 24px; }
+      .profile-wrap { order: -1; width: 210px; justify-self: start; }
+      .research-grid, .two-col { grid-template-columns: 1fr; }
+      .education-item { grid-template-columns: 60px 1fr; gap: 14px; padding: 15px; }
+      .school-logo { width: 60px; height: 60px; border-radius: 15px; }
+      .school-logo img { width: 50px; height: 50px; }
+      .paper { grid-template-columns: 1fr; gap: 14px; }
+      .paper-media { max-width: 320px; }
+      footer { text-align: left; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">Yongjae Lim</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#achievements">Achievements</a>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div>
+        <div class="eyebrow">Autonomous Driving · Motion Planning · Human Preference</div>
+        <h2>Yongjae Lim</h2>
+        <p class="bio">
+          I am a Ph.D. candidate at Seoul National University, advised by
+          <a href="https://larr.snu.ac.kr/">Prof. H. Jin Kim</a>. My research focuses on autonomous driving,
+          personalized driving, and trajectory planning, with an emphasis on planning systems that adapt to
+          human preferences across normal-to-urgent driving scenarios.
+        </p>
+        <div class="link-row" aria-label="Contact and profile links">
+          <a class="pill-link" href="mailto:yongjae.lim@snu.ac.kr" aria-label="Email Yongjae Lim">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path class="icon-stroke" d="M4 6h16v12H4z"></path>
+              <path class="icon-stroke" d="m4 7 8 6 8-6"></path>
+            </svg>
+            Email
+          </a>
+          <a class="pill-link" href="https://scholar.google.com/citations?user=S1p-KXMAAAAJ&hl=ko&oi=ao" aria-label="Google Scholar profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 1.8 9 12 15l10.2-6L12 3z"></path>
+              <path d="M5.8 12.1v4.2c0 1.6 2.8 3.2 6.2 3.2s6.2-1.6 6.2-3.2v-4.2L12 15.8l-6.2-3.7z"></path>
+              <path class="icon-stroke" d="M21 10.2v6.3"></path>
+            </svg>
+            Google Scholar
+          </a>
+          <a class="pill-link" href="https://github.com/yjlim97/" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.36-1.18-3.36-1.18-.45-1.15-1.1-1.45-1.1-1.45-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.21-.25-4.54-1.1-4.54-4.92 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 7.26c.85 0 1.7.11 2.5.33 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.83-2.33 4.67-4.55 4.92.36.31.68.92.68 1.86v2.53c0 .27.18.58.69.48A10 10 0 0 0 12 2.2z"></path>
+            </svg>
+            GitHub
+          </a>
+          <!-- <a class="pill-link" href="https://linkedin.com/in/yjlim97">LinkedIn</a> -->
+        </div>
+      </div>
+      <a class="profile-wrap" href="images/yjlim97.png" aria-label="Open profile photo">
+        <img src="images/yjlim97.png" alt="Profile photo of Yongjae Lim" />
+      </a>
+    </header>
+
+    <section id="research">
+      <div class="section-head">
+        <h2>Research</h2>
+        <p class="section-note">Current focus</p>
+      </div>
+      <div class="card">
+        <p class="entry">
+          My research focuses on human-preference-aware autonomous driving. I study trajectory planning methods
+          that incorporate human preferences into normal-to-urgent driving scenarios.
+        </p>
+        <div class="research-grid">
+          <div class="topic">
+            <strong>Personalized Driving</strong>
+            <span>
+              Human-preference-aware trajectory planning that adapts vehicle behavior to individual driving styles and comfort preferences.
+            </span>
+          </div>
+
+          <div class="topic">
+            <strong>Inevitable Collision Handling</strong>
+            <span>
+              Human-preference-aware collision-severity mitigation for unavoidable collision scenarios in dynamic environments.
+            </span>
+          </div>
+
+          <div class="topic">
+            <strong>Multi-Trajectory Optimization</strong>
+            <span>
+              Real-time multi-trajectory optimization using gradient-free and gradient-based optimal control techniques.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="section-head">
+        <h2>News</h2>
+        <p class="section-note">Selected updates</p>
+      </div>
+      <div class="card">
+        <ul class="news-list">
+          <li><strong>2026:</strong> Personalized autonomous driving work accepted to ICRA.</li>
+          <li><strong>2026:</strong> Safe multimodal replanning work accepted to RA-L.</li>
+          <li><strong>2025:</strong> Collision avoidance survey and reachable-set-based trajectory sampling works published.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="section-head">
+        <h2>Publications</h2>
+        <p class="section-note">Representative papers are highlighted.</p>
+      </div>
+      <div class="card">
+        <article class="paper">
+          <a class="paper-media" href="https://yjlim97.github.io/ICRA_2026/">
+            <img src="images/Lim2026personalized.jpg" alt="Personalized autonomous driving teaser" />
+          </a>
+          <div>
+            <span class="venue">ICRA 2026</span>
+            <a href="https://yjlim97.github.io/ICRA_2026/"><span class="papertitle">Personalized Autonomous Driving via Optimal Control with Clearance Constraints from Questionnaires</span></a>
+            <p class="authors"><strong>Yongjae Lim*</strong>, Dabin Kim, and H. Jin Kim</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2602.08326">paper</a>
+              <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
+              <a href="https://yjlim97.github.io/ICRA_2026/">project page</a>
+            </div>
+            <p class="description">A human-preference-aware driving planner that incorporates users' desired clearance from surrounding vehicles as constraints in an optimal control problem.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <a class="paper-media" href="https://yjlim97.github.io/RAL_2026/">
+            <img src="images/Lim2026safe.jpg" alt="Safe multimodal replanning teaser" />
+          </a>
+          <div>
+            <span class="venue">RA-L 2026</span>
+            <a href="https://yjlim97.github.io/RAL_2026/"><span class="papertitle">Safe Multimodal Replanning via Projection-based Trajectory Clustering in Crowded Environments</span></a>
+            <p class="authors"><strong>Yongjae Lim*</strong>, Seungwoo Jung, Dabin Kim, Dongjae Lee, and H. Jin Kim</p>
+            <div class="paper-links">
+              <a href="https://ieeexplore.ieee.org/document/11359671">paper</a>
+              <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">video</a>
+              <a href="https://yjlim97.github.io/RAL_2026/">project page</a>
+            </div>
+            <p class="description">Identifies multimodal optimal trajectory distributions without initial guidance by projecting sampled trajectories onto safe constraint sets, clustering them, and optimizing each cluster using MPPI.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-media">
+            <img src="images/Lim2026efficient.png" alt="Conditional flow matching path planning teaser" />
+          </div>
+          <div>
+            <span class="venue">IJCAS 2026</span>
+            <span class="papertitle">Efficient Learning-Based Path Planning on Receding Horizon with Conditional Flow Matching</span>
+            <p class="authors"><strong>Yongjae Lim*</strong>, Yongjae Lim, Yeonsoo Park, Jeongtae Huh, Youngsoo Han, and H. Jin Kim</p>
+            <div class="paper-links">
+              <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">paper</a>
+            </div>
+            <p class="description">A normalizing-flow-based path-planning method that refines trajectories along the planning horizon and can initialize MPPI optimization for improved efficiency.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-media">
+            <img src="images/MARL_survey.png" alt="Multi-robot collision avoidance survey teaser" />
+          </div>
+          <div>
+            <span class="venue">IJCAS 2025</span>
+            <span class="papertitle">A Survey on Collision Avoidance Algorithms for Multi-robot Systems</span>
+            <p class="authors">Dahyun Oh*, <strong>Yongjae Lim</strong>, Hoseong Jung, Jeongtae Huh, Jusuk Lee, Changhyun Choi, H. Jin Kim, and Jungwon Park</p>
+            <div class="paper-links">
+              <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">paper</a>
+            </div>
+            <p class="description">A survey of recent collision avoidance methods for multi-robot systems, including classical centralized and decentralized approaches as well as learning-based methods.</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="paper-media">
+            <img src="images/LRFS.jpg" alt="Reachable-set-based trajectory sampling teaser" />
+          </div>
+          <div>
+            <span class="venue">IEEE Access 2025</span>
+            <span class="papertitle">Reachable-Set-based Trajectory Sampling for Local Planning of Autonomous Vehicles</span>
+            <p class="authors"><strong>Yongjae Lim*</strong>, Youngmin Yoon, Jeonghyun Byun, Sangyoon Kim, and H. Jin Kim</p>
+            <div class="paper-links">
+              <a href="https://ieeexplore.ieee.org/document/11269689">paper</a>
+            </div>
+            <p class="description">Combines the Lateral Recursive Feasible Set with truncated normal sampling to generate high-quality collision-free trajectories more efficiently and reliably.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p class="section-note">Academic background</p>
+      </div>
+      <div class="card">
+        <div class="education-list">
+          <div class="education-item">
+            <div class="school-logo">
+              <img src="images/snu_logo.png" alt="Seoul National University logo" />
+            </div>
+            <div>
+              <p class="education-degree">M.S. &amp; Ph.D. in Mechanical Engineering</p>
+              <p class="education-meta">Seoul National University · 2023 - Present</p>
+              <p class="education-advisor">Advisor: <a href="https://larr.snu.ac.kr/">Prof. H. Jin Kim</a></p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="school-logo">
+              <img src="images/hanyang_logo.png" alt="Hanyang University logo" />
+            </div>
+            <div>
+              <p class="education-degree">B.S. in Automotive Engineering</p>
+              <p class="education-meta">Hanyang University · 2016 - 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="section-head">
+        <h2>Achievements</h2>
+        <p class="section-note">Awards and honors</p>
+      </div>
+      <div class="card">
+        <ul class="achievement-list">
+          <li><strong>2023:</strong> Academic Award, Journal of Auto-vehicle Safety Association.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Design refreshed in the style of a modern academic portfolio. Original template credit: <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.
+    </footer>
+  </main>
+</body>
 </html>
