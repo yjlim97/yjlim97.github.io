@@ -609,8 +609,12 @@
               <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
               <a href="https://yjlim97.github.io/ICRA_2026/">project page</a>
             </div>
-            <p class="description">A human-preference-aware driving planner that incorporates users' desired clearance from surrounding vehicles as constraints in an optimal control problem.</p>
-          </div>
+            <p class="description">
+              Driving without considering the preferred separation distance from surrounding vehicles may cause discomfort for users.
+            To address this limitation, this paper proposes a human-preference-aware driving planner that incorporates users’ desired clearance from surrounding vehicles as constraints in an optimal control problem. 
+            Simulations with different user responses show that the planner better aligns with individual preferences than preference-agnostic baselines.
+            </p>
+            </div>
         </article>
 
         <article class="paper">
@@ -626,8 +630,12 @@
               <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">video</a>
               <a href="https://yjlim97.github.io/RAL_2026/">project page</a>
             </div>
-            <p class="description">Identifies multimodal optimal trajectory distributions without initial guidance by projecting sampled trajectories onto safe constraint sets, clustering them, and optimizing each cluster using MPPI.</p>
-          </div>
+            <p class="description">
+              Crowded and dynamic environments require fast replanning; however, single-trajectory optimization lacks alternative paths, while parallel optimization often relies on predefined initial guidance. 
+            In this work, we identify multimodal optimal trajectory distributions without initial guidance by projecting sampled trajectories onto safe constraint sets, clustering them, and optimizing each cluster using MPPI.
+            Simulation and hardware experiments demonstrate higher success rates and safe drone navigation in crowded 3D environments.
+          </p>
+            </div>
         </article>
 
         <article class="paper">
@@ -641,8 +649,13 @@
             <div class="paper-links">
               <a href="https://link.springer.com/article/10.1007/s12555-026-00038-1">paper</a>
             </div>
-            <p class="description">A normalizing-flow-based path-planning method that refines trajectories along the planning horizon and can initialize MPPI optimization for improved efficiency.</p>
-          </div>
+            <p class="description">
+            Denoising-based planning can generate safe and optimized trajectories but often requires slow iterative refinement. 
+            This paper proposes a normalizing-flow-based path-planning method that refines trajectories step by step along the planning horizon, enabling adaptive trajectory-length adjustment under computational time constraints. 
+            The generated trajectory can also initialize MPPI optimization, reducing required iterations and improving efficiency. 
+            The method is validated through simulation comparisons with diffusion-like planners and hardware experiments.
+            </p>
+            </div>
         </article>
 
         <article class="paper">
@@ -656,7 +669,8 @@
             <div class="paper-links">
               <a href="https://link.springer.com/article/10.1007/s12555-024-1104-9">paper</a>
             </div>
-            <p class="description">A survey of recent collision avoidance methods for multi-robot systems, including classical centralized and decentralized approaches as well as learning-based methods.</p>
+            <p class="description">Multi-robot systems improve efficiency through cooperation, but collision avoidance with static and dynamic obstacles remains a major challenge. 
+            This survey reviews recent collision avoidance methods, including classical centralized and decentralized approaches as well as learning-based methods.</p>
           </div>
         </article>
 
@@ -671,7 +685,9 @@
             <div class="paper-links">
               <a href="https://ieeexplore.ieee.org/document/11269689">paper</a>
             </div>
-            <p class="description">Combines the Lateral Recursive Feasible Set with truncated normal sampling to generate high-quality collision-free trajectories more efficiently and reliably.</p>
+            <p class="description">To improve sampling efficiency in sampling based trajectory optimization, we focus on increasing the ratio of feasible trajectory samples among all sampled trajectories. 
+            To this end, we propose LRFS MPPI, which combines the Lateral Recursive Feasible Set (LRFS), a recursively computed feasible steering input set that guarantees the vehicle remains within road boundaries over the prediction horizon, with truncated normal sampling. 
+            We demonstrate through simulation and real world experiments that the proposed method generates high quality collision free trajectories more efficiently and reliably.</p>
           </div>
         </article>
       </div>
