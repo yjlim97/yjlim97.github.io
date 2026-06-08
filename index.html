@@ -330,8 +330,9 @@
       padding: 3px 9px;
       margin-bottom: 8px;
       border-radius: 999px;
-      background: var(--soft);
-      color: var(--accent-dark);
+      background: #ffffff;
+      color: #f73636;
+      border: 1px solid #f73636;
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 0.04em;
@@ -367,6 +368,11 @@
 
     .description { margin-top: 10px; }
 
+    p.authors strong {
+      color: #000000;
+      font-weight: 700;
+    }
+
     .paper-links {
       display: flex;
       flex-wrap: wrap;
@@ -378,7 +384,7 @@
       padding: 4px 10px;
       border-radius: 999px;
       background: #f1f5f9;
-      color: #334155;
+      color: #2563eb;
       font-size: 13px;
       font-weight: 700;
     }
@@ -398,7 +404,7 @@
 
     .entry strong {
       display: block;
-      color: var(--ink);
+      color: #000000;
       font-size: 16px;
       margin-bottom: 3px;
     }
@@ -461,7 +467,7 @@
     }
 
     .achievement-list li { margin: 7px 0; }
-    .achievement-list strong { color: var(--ink); }
+    .achievement-list strong { color: #000000; }
 
 
     footer {
@@ -470,6 +476,26 @@
       text-align: right;
       font-size: 12px;
     }
+
+    .keywords {
+    display: flex;
+    gap: 0.4rem;
+    margin: 0.4rem 0 0.55rem;
+    flex-wrap: wrap;
+    }
+
+    .keyword {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.18rem 0.5rem;
+    border-left: 3px solid #4c6ef5;
+    background: rgba(76, 110, 245, 0.08);
+    color: #111;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    }
+
 
     @media (max-width: 760px) {
       .page { width: min(100% - 24px, var(--max-width)); padding-top: 22px; }
@@ -503,13 +529,12 @@
 
     <header class="hero" id="top">
       <div>
-        <div class="eyebrow">Autonomous Driving · Motion Planning · Human Preference</div>
+        <!-- <div class="eyebrow">Autonomous Driving · Motion Planning · Human Preference</div> -->
         <h2>Yongjae Lim</h2>
         <p class="bio">
           I am a Ph.D. candidate at Seoul National University, advised by
-          <a href="https://larr.snu.ac.kr/">Prof. H. Jin Kim</a>. My research focuses on autonomous driving,
-          personalized driving, and trajectory planning, with an emphasis on planning systems that adapt to
-          human preferences across normal-to-urgent driving scenarios.
+          <a href="https://larr.snu.ac.kr/">Prof. H. Jin Kim</a>. 
+          My research focuses on trajectory planning across normal-to-urgent driving scenarios.
         </p>
         <div class="link-row" aria-label="Contact and profile links">
           <a class="pill-link" href="mailto:yongjae.lim@snu.ac.kr" aria-label="Email Yongjae Lim">
@@ -548,26 +573,26 @@
       </div>
       <div class="card">
         <p class="entry">
-          My research focuses on human-preference-aware autonomous driving. I study trajectory planning methods
-          that incorporate human preferences into normal-to-urgent driving scenarios.
+          My research focuses on trajectory planning, with an emphasis on two main directions: 1) planning systems that adapt to human preferences across normal to urgent driving scenarios, 
+          and 2) inevitable-collision-aware motion planning that minimizes collision severity when collision-free trajectories are infeasible.
         </p>
         <div class="research-grid">
           <div class="topic">
-            <strong>Personalized Driving</strong>
+            <strong>A. Personalized driving</strong>
             <span>
-              Human-preference-aware trajectory planning that adapts vehicle behavior to individual driving styles and comfort preferences.
+              Human-preference-aware trajectory planning that adapts vehicle behavior to individual driving styles.
             </span>
           </div>
 
           <div class="topic">
-            <strong>Inevitable Collision Handling</strong>
+            <strong>B. Inevitable collision handling</strong>
             <span>
-              Human-preference-aware collision-severity mitigation for unavoidable collision scenarios in dynamic environments.
+              Collision-severity mitigation for unavoidable collision scenarios in dynamic environments.
             </span>
           </div>
 
           <div class="topic">
-            <strong>Multi-Trajectory Optimization</strong>
+            <strong>C. Multi-trajectory optimization</strong>
             <span>
               Real-time multi-trajectory optimization using gradient-free and gradient-based optimal control techniques.
             </span>
@@ -603,6 +628,9 @@
             <span class="venue">ICRA 2026</span>
             <a href="https://yjlim97.github.io/ICRA_2026/"><span class="papertitle">Personalized Autonomous Driving via Optimal Control with Clearance Constraints from Questionnaires</span></a>
             <p class="authors"><strong>Yongjae Lim*</strong>, Dabin Kim, and H. Jin Kim</p>
+            
+            <p class="keywords"> <span class="keyword">Personalized driving</span> <span class="keyword">Multi-trajectory optimization</span> </p>
+
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2602.08326">paper</a>
               <a href="https://www.youtube.com/watch?v=Er0mzk02wtc">video</a>
@@ -624,6 +652,9 @@
             <span class="venue">RA-L 2026</span>
             <a href="https://yjlim97.github.io/RAL_2026/"><span class="papertitle">Safe Multimodal Replanning via Projection-based Trajectory Clustering in Crowded Environments</span></a>
             <p class="authors"><strong>Yongjae Lim*</strong>, Seungwoo Jung, Dabin Kim, Dongjae Lee, and H. Jin Kim</p>
+
+            <p class="keywords"> <span class="keyword">Multi-trajectory optimization</span> </p>
+
             <div class="paper-links">
               <a href="https://ieeexplore.ieee.org/document/11359671">paper</a>
               <a href="https://www.youtube.com/watch?v=q97SMjJk61Q&t=5s">video</a>
